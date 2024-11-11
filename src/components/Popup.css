@@ -1,0 +1,39 @@
+/* Popup.css */
+.popup {
+    position: fixed;
+    bottom: 28px;
+    right: 20px;
+    background-color: rgba(0, 179, 255, 0.854);
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    z-index: 1000;
+    color: aliceblue;
+    animation: popupAnimation 2s ease-in-out;
+}
+
+/* Animation for popup */
+@keyframes popupAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .popup {
+        font-size: 0.8rem;
+    }
+}
